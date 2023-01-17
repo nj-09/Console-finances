@@ -88,5 +88,12 @@ var finances = [
     ];
 
 // Console Logging Financial Analysis title
+
 console.log("Financial Analysis");
 console.log("----------------------------");
+
+// Array length of all the months in the "finances" above
+
+let numOfMonths = finances.length;
+console.log(`Total months:${numofMonths}`)
+
