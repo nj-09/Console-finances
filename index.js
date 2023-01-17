@@ -86,3 +86,7 @@ var finances = [
     ['Jan-2017', 138230],
     ['Feb-2017', 671099]
     ];
+
+// Console Logging Financial Analysis title
+console.log("Financial Analysis");
+console.log("----------------------------");
