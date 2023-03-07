@@ -108,7 +108,7 @@ console.log(`Total:${sumTotal}`)
 
 // CALCULATE the average change in profit and losses //
 
-let change = 0
+let change = []
 for (let i = 1; i < finances.length; i++) {
     change.push(finances[i][1] - finances[i - 1][1]);
 }
