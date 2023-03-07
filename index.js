@@ -132,46 +132,41 @@ console.log(`Average Change:${average}`)
 
 let months = [];
 
-// greatest increase in profits (date and amount) over the entire period //
 
-// Javascript code to implement the idea
- 
-// Function to find the minimum
-// and maxximum of the array
+//--------------------------------------------------------------------------------Greatest Increase--------------------------------------------------------------------------------//
+// Greatest increase in profits (date and amount) over the entire period //
+////----------------------------------------------------------------------------- PSEUDOCODE -----------------------------------------------------------------------------//// 
 
-function findMinMax(arr,n)
-{
-    let mini = arr[0];
-    let maxi = arr[0];
- 
-    for (let i = 0; i < n; i++) {
-        if (arr[i] < mini) {
-            mini = arr[i];
-        }
-        else if (arr[i] > maxi) {
-            maxi = arr[i];
-        }
-    }
-    let ans = {
-        "first":mini,
-        "second":maxi
-    }
-    return ans;
+
+// 1. You need to create a variable to hold the greatestProfitIncrease
+var greatestProfitIncrease
+
+// 2. Loop through finances
+
+for (let i = 1; i < finances.length; i++) {
 }
- 
-    let arr = [ 1, 2, 3, 4, 5 ];
-    let N = arr.length;
- 
-    // Function Call
-    let ans = {};
-    ans = findMinMax(arr, N);
-    console.log("Maximum is: " + ans.second);
-    console.log("Minimum is: " + ans.first);
-     
-// This code is contributed by akashish__
 
-// greatest decrease in losses (date and amount) over the entire period //
+// 3. Get the current month change with if/else if statements (the difference between the current profit and the previous profit)
 
+// 4. If that difference is greater than "greatestProfitIncrease", you would update it.
+
+// That greatestProfitIncrease would be your answer after you finish the loop
+
+
+//--------------------------------------------------------------------------------Greatest Decrease--------------------------------------------------------------------------------//
+// Greatest decrease in losses (date and amount) over the entire period //
+////----------------------------------------------------------------------------- PSEUDOCODE -----------------------------------------------------------------------------//// 
+
+// 1. You need to create a variable to hold the greatestProfitIncrease
+var greatestProfitDecrease
+
+// 2. Loop through finances
+for (let i = 1; i < finances.length; i++) {
+}
+
+// 3. Get the current month change with if/else if statements (the difference between the current loss and the previous loss)
+
+// 4. If that difference is less than "greatestProfitDecrease", you would update it.
 
 
 
