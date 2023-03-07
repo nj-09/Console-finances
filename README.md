@@ -5,7 +5,7 @@
 In this particular challenge, I'll be using JavaScript arrays, for loops, conditional statements to achieve an analyzation of a company's financial records.
 I was provided with a starter code which contained a financial dataset.
 
-Link to deployed application:
+Link to deployed application: https://nj-09.github.io/Console-finances/
 
 # Screenshot of deployed application's console log
 
