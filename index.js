@@ -123,8 +123,9 @@ for (let i = 0; i < change.length; i++) {
         sum += change [i];
     }
 }
-let total
-let average = Math.round((total/count) * 100) / 100;
+
+
+let average = Math.round((sum/count) * 100) / 100;
 
 console.log(`Average Change:${average}`)
 
