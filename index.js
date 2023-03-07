@@ -143,7 +143,16 @@ var greatestProfitIncrease
 
 // 2. Loop through finances
 for (let i = 0; i < finances.length; i++) {
+    const thisProfit = finances[i][1];
+    const lastProfit = finances[i][finances.length - 1];
+    
+    const increase = thisProfit - lastProfit; 
+    
+    if (increase > greatestProfitIncrease) {
+        // greatestProfitIncrease = ***what should you set this equal to?***
+    
 }
+    }
 // 3 - 1. Get the current month change 
 
 // 3 - 2. with if/else if statements (the difference between the current profit and the previous profit)  - so this indicates you need to calculate a difference between the 
@@ -165,7 +174,16 @@ var greatestProfitDecrease
 
 // 2. Loop through finances
 for (let i = 0; i < finances.length; i++) {
+    const thisLoss = finances[i][1];
+    const lastLoss = finances[i][finances.length - 1];
+    
+    const decrease = thisLoss - lastLoss; 
+    
+    if (decrease > greatestProfitDecrease) {
+       // greatestProfitDecrease = ***what should you set this equal to?***
+    
 }
+    }
 // 3 - 1. Get the current month change 
 
 // 3 - 2. with if/else if statements (the difference between the current loss and the previous loss)  - so this indicates you need to calculate a difference between the 
