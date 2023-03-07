@@ -116,12 +116,14 @@ for (let i = 1; i < finances.length; i++) {
 // CALCULATE the average //
 
 let calculated = 0
+let sum
 for (let i = 0; i < change.length; i++) {
     if (change [i]) {
         calculated ++;
         sum += change [i];
     }
 }
+let total
 let average = Math.round((total/count) * 100) / 100;
 
 console.log(`Average Change:${average}`)
