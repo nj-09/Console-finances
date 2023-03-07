@@ -139,7 +139,7 @@ let months = [];
 
 
 // 1. You need to create a variable to hold the greatestProfitIncrease
-var greatestProfitIncrease
+var greatestProfitIncrease = 0
 
 // 2. Loop through finances
 for (let i = 0; i < finances.length; i++) {
@@ -169,8 +169,8 @@ for (let i = 0; i < finances.length; i++) {
 // Greatest decrease in losses (date and amount) over the entire period //
 ////----------------------------------------------------------------------------- PSEUDOCODE -----------------------------------------------------------------------------//// 
 
-// 1. You need to create a variable to hold the greatestProfitIncrease
-var greatestProfitDecrease
+// 1. You need to create a variable to hold the greatestLossDecrease
+var greatestLossDecrease = 0
 
 // 2. Loop through finances
 for (let i = 0; i < finances.length; i++) {
@@ -179,8 +179,8 @@ for (let i = 0; i < finances.length; i++) {
     
     const decrease = thisLoss - lastLoss; 
     
-    if (decrease > greatestProfitDecrease) {
-       // greatestProfitDecrease = ***what should you set this equal to?***
+    if (decrease > greatestLossDecrease) {
+       // greatestLossDecrease = ***what should you set this equal to?***
     
 }
     }
