@@ -1,94 +1,24 @@
 # Unit 4 Challenge: Console Finances
-
-## Overview
  
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+## Highlights
 
-## Instructions
+In this particular challenge, I'll be using JavaScript arrays, for loops, conditional statements to achieve an analyzation of a company's financial records.
+I was provided with a starter code which contained a financial dataset.
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+Link to deployed application:
 
-2. Copy the starter files in your local git repository.
-   
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
+# Screenshot of deployed application's console log
 
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+# Screenshot of workflow
+![image](https://user-images.githubusercontent.com/119903128/223392753-7efd5b9d-511a-4045-8b93-278658b8a349.png)
 
-* The total number of months included in the dataset.
+# Resources and documentation used for learning and research into various parts of the assignment
 
-* The net total amount of Profit/Losses over the entire period.
+1. How for loop works (to figure out how to find lastProfit)
+https://www.w3schools.com/js/js_loop_for.asp
 
-* The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in profits are from month to month and then find the average.
-  * (`Total/Number of months`)
+2. This is for arrays. This will help with a few things, understanding the for loop, and how to access current and last profit.
+https://www.w3schools.com/js/js_arrays.asp
 
-* The greatest increase in profits (date and amount) over the entire period.
-
-* The greatest decrease in losses (date and amount) over the entire period.
-
-When you open your code in the browser your resulting analysis should look similar to the following:
-
-  ```text
-  Financial Analysis
-  ----------------------------
-  Total Months: 25
-  Total: $2561231
-  Average  Change: $-2315.12
-  Greatest Increase in Profits: Feb-2012 ($1926159)
-  Greatest Decrease in Profits: Sep-2013 ($-2196167)
-  ```
-
-Your final code should print the analysis to the console.
-
-**Hints:**
-
-* You will need to do some research on your own for this project!
-
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
-
-* How do you only print to the nearest 100th in JavaScript?
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Repository Quality: 12%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme with description, screenshot, link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-## Copyright
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-
+3. This is about if statements, it should help with understanding the comparison between the increases and it will help with figuring logic behind concepts.
+https://www.w3schools.com/js/js_if_else.asp
