@@ -116,14 +116,13 @@ for (let i = 1; i < finances.length; i++) {
 // CALCULATE the average //
 
 let calculated = 0
-let sum
+let sum =0;
 for (let i = 0; i < change.length; i++) {
     if (change [i]) {
         calculated ++;
         sum += change [i];
     }
 }
-
 
 let average = Math.round((sum/change.length) * 100) / 100;
 
@@ -133,8 +132,46 @@ console.log(`Average Change:${average}`)
 
 let months = [];
 
+// greatest increase in profits (date and amount) over the entire period //
 
-// Combining above value to new array //
+// Javascript code to implement the idea
+ 
+// Function to find the minimum
+// and maxximum of the array
+
+function findMinMax(arr,n)
+{
+    let mini = arr[0];
+    let maxi = arr[0];
+ 
+    for (let i = 0; i < n; i++) {
+        if (arr[i] < mini) {
+            mini = arr[i];
+        }
+        else if (arr[i] > maxi) {
+            maxi = arr[i];
+        }
+    }
+    let ans = {
+        "first":mini,
+        "second":maxi
+    }
+    return ans;
+}
+ 
+    let arr = [ 1, 2, 3, 4, 5 ];
+    let N = arr.length;
+ 
+    // Function Call
+    let ans = {};
+    ans = findMinMax(arr, N);
+    console.log("Maximum is: " + ans.second);
+    console.log("Minimum is: " + ans.first);
+     
+// This code is contributed by akashish__
+
+// greatest decrease in losses (date and amount) over the entire period //
+
 
 
 
