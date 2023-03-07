@@ -103,7 +103,7 @@ let sumTotal = 0;
 for ( var i = 0; i < finances.length; i++) {
     sumTotal += finances[i][1];
 }
-console.log(`Total:${sumTotal}`)
+console.log(`Total:$${sumTotal}`)
 
 
 // CALCULATE the average change in profit and losses //
@@ -126,7 +126,7 @@ for (let i = 0; i < change.length; i++) {
 
 let average = Math.round((sum/change.length) * 100) / 100;
 
-console.log(`Average Change:${average}`)
+console.log(`Average Change:$${average}`)
 
 // Month variable //
 
@@ -139,59 +139,48 @@ let months = [];
 
 
 // 1. You need to create a variable to hold the greatestProfitIncrease
-var greatestProfitIncrease = 0
+var greatestProfitIncrease = 0; //Place to keep track of our greatest increase of profit
+var greatestProfitIncreaseMonth = "";
 
 // 2. Loop through finances
-for (let i = 0; i < finances.length; i++) {
-    const thisProfit = finances[i][1];
-    const lastProfit = finances[i][finances.length - 1];
+for (let i = 1; i < finances.length; i++) {
+    const thisProfit = finances[i][1]; //Current month's finance value
+    const lastProfit = finances[i-1][1]; //Previous month's finance value
+
+    const increase = thisProfit - lastProfit; //Find the difference (profit) between the current month and last month
     
-    const increase = thisProfit - lastProfit; 
-    
+    //Compare if the current difference's profit is greater than the current greatest profit.
     if (increase > greatestProfitIncrease) {
-        // greatestProfitIncrease = ***what should you set this equal to?***
-    
-}
+        greatestProfitIncrease = increase; //If so, update the greatest profit to `increase`
+        greatestProfitIncreaseMonth = finances[i][0]; // Adding in the month
     }
-// 3 - 1. Get the current month change 
-
-// 3 - 2. with if/else if statements (the difference between the current profit and the previous profit)  - so this indicates you need to calculate a difference between the 
-// current month change and the previous month change - how do you get the previous month's change?
-
-// 3. Get the current month change with if/else if statements (the difference between the current profit and the previous profit)
-
-// 4. If that difference is greater than "greatestProfitIncrease", you would update it.
-
-// That greatestProfitIncrease would be your answer after you finish the loop
-
+}
+console.log(`Greatest Increase in Profits: ${greatestProfitIncreaseMonth} $${greatestProfitIncrease}`);
 
 //--------------------------------------------------------------------------------Greatest Decrease--------------------------------------------------------------------------------//
 // Greatest decrease in losses (date and amount) over the entire period //
 ////----------------------------------------------------------------------------- PSEUDOCODE -----------------------------------------------------------------------------//// 
 
 // 1. You need to create a variable to hold the greatestLossDecrease
-var greatestLossDecrease = 0
+var greatestLossDecrease = 0 //Place to keep track of our greatest increase of profit
+var greatestLossDecreaseMonth = "";
 
 // 2. Loop through finances
-for (let i = 0; i < finances.length; i++) {
-    const thisLoss = finances[i][1];
-    const lastLoss = finances[i][finances.length - 1];
+for (let i = 1; i < finances.length; i++) {
+    const thisLoss = finances[i][1]; //Current month's finance value
+    const lastLoss = finances[i-1][1]; //Previous month's finance value
     
-    const decrease = thisLoss - lastLoss; 
+
+    const decrease = thisLoss - lastLoss; //Find the difference (loss) between the current month and last month
     
-    if (decrease > greatestLossDecrease) {
-       // greatestLossDecrease = ***what should you set this equal to?***
-    
-}
+    //Compare if the current difference's loss is greater than the current greatest loss.
+    if (decrease < greatestLossDecrease) {
+        greatestLossDecrease = decrease; //If so, update the greatest loss to `decrease`
+        greatestLossDecreaseMonth = finances[i][0]; // Adding in the month
     }
-// 3 - 1. Get the current month change 
+}
+console.log(`Greatest Decrease in Profits: ${greatestLossDecreaseMonth} $${greatestLossDecrease}`);
 
-// 3 - 2. with if/else if statements (the difference between the current loss and the previous loss)  - so this indicates you need to calculate a difference between the 
-// current month change and the previous month change - how do you get the previous month's change?
-
-// 3. Get the current month change with if/else if statements (the difference between the current loss and the previous loss)
-
-// 4. If that difference is less than "greatestProfitDecrease", you would update it.
 
 
 
