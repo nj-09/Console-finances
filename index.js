@@ -142,9 +142,12 @@ let months = [];
 var greatestProfitIncrease
 
 // 2. Loop through finances
-
-for (let i = 1; i < finances.length; i++) {
+for (let i = 0; i < finances.length; i++) {
 }
+// 3 - 1. Get the current month change 
+
+// 3 - 2. with if/else if statements (the difference between the current profit and the previous profit)  - so this indicates you need to calculate a difference between the 
+// current month change and the previous month change - how do you get the previous month's change?
 
 // 3. Get the current month change with if/else if statements (the difference between the current profit and the previous profit)
 
@@ -161,8 +164,12 @@ for (let i = 1; i < finances.length; i++) {
 var greatestProfitDecrease
 
 // 2. Loop through finances
-for (let i = 1; i < finances.length; i++) {
+for (let i = 0; i < finances.length; i++) {
 }
+// 3 - 1. Get the current month change 
+
+// 3 - 2. with if/else if statements (the difference between the current loss and the previous loss)  - so this indicates you need to calculate a difference between the 
+// current month change and the previous month change - how do you get the previous month's change?
 
 // 3. Get the current month change with if/else if statements (the difference between the current loss and the previous loss)
 
